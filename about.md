@@ -3,8 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-We refuel together, struggles together, progresses together.
+I raise my hand to the sky, not to harvest the stars and moon, I only need its upward unyielding posture.
 
 ### More Information
 

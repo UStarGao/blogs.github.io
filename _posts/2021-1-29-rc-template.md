@@ -3,7 +3,7 @@ layout: post
 title: kind-ReplicationController
 ---
 
-'''
+```
 apiVersion: v1 #指定api版本，此值必须在kubectl apiversion中
 kind: ReplicationController #指定创建资源的角色/类型
 metadata: #资源元数据/属性
@@ -91,4 +91,4 @@ spec:
         #meptyDir:{}
         hostPath:
           path:/opt #挂载设备类型为hostpath，路径为宿主下的/opt
-'''
+```

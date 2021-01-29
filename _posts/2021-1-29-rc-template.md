@@ -1,6 +1,6 @@
 ---
 layout: post
-title: kind-ReplicationController
+title: kind:ReplicationController template
 ---
 
 ```

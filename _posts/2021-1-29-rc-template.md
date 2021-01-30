@@ -98,3 +98,5 @@ spec:
         hostPath:
           path:/opt #挂载设备类型为hostpath，路径为宿主下的/opt
 ```
+
+Author:UStarGao

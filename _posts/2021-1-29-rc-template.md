@@ -2,6 +2,12 @@
 layout: post
 title: kind:ReplicationController template
 ---
+在用户定义范围内，如果pod增多，则ReplicationController会终止额外的pod，如果减少，RC会创建新的pod，始终保持在定义范围。例如，RC会在Pod维护（例如内核升级）后在节点上重新创建新Pod。
+（1）ReplicationController会替换由于某些原因而被删除或终止的pod，例如在节点故障或中断节点维护（例如内核升级）的情况下。因此，即使应用只需要一个pod，我们也建议使用ReplicationController
+（2）RC跨多个Node节点监视多个pod
+详情可参考中文社区：http://docs.kubernetes.org.cn/437.html
+
+![容器映射](http://ucloudspt.cn-sh2.ufileos.com/Blogs/容器映射.png)
 
 ```
 apiVersion: v1 #指定api版本，此值必须在kubectl apiversion中

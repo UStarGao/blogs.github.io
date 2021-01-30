@@ -2,6 +2,7 @@
 layout: post
 title: kind:pod template
 ---
+在Docker中，容器是最小的处理单元，增删改查的对象是容器，容器是一种虚拟化技术，容器之间是隔离的，隔离是基于Linux Namespace 实现的。而在Kubernetes中，Pod包含一个或者多个相关的容器，Pod可以认为是容器的一种延伸扩展，一个Pod也是一个隔离体，而Pod内部包含的一组容器又是共享的（包括PID、Network、IPC、UTS）除此之外，Pod中的容器可以访问共同的数据卷来实现文件系统的共享。
 
 ```
 apiVersion: v1 #指定api版本，此值必须在kubectl apiversion中

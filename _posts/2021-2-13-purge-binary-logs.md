@@ -13,7 +13,7 @@ vim /home/purge_binary_logs.sh
 
 ```
 while /bin/true; do
-    #把16hour改成需要清理n小时前的binlog的值即可
+    #把-16改成需要清理n小时前的binlog的n的值即可
     time=$(date "+%Y-%m-%d %H:%M:%S" -d "-16hour")
     #把$ip，端口$port，用户名$user，密码$passward改成对应MySQL实例的
     mysql -e "purge binary logs to ${time}" -h$ip -P$port -u$user -p$passward

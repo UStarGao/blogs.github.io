@@ -9,6 +9,8 @@ title: Crontab purge binary logs
 【注意】当然MySQL有自带binlog清理机制，通过修改expire_logs_days即binlog过期时间进行控制。但是由于该参数的取值范围是1-31天，所以无法精确清理小时级别的日志。
 
 ## .sh脚本案例
+vim /home/purge_binary_logs.sh
+
 ```
 while /bin/true; do
     #把16hour改成需要清理n小时前的binlog的值即可

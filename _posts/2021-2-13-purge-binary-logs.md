@@ -19,13 +19,13 @@ while /bin/true; do
     sleep 5
 done
 
-## Crontab设置
+```
+## Crontab设置方法
 vim /etc/crontab
 
 ![定时任务写法](http://ucloudspt.cn-sh2.ufileos.com/Blogs/定时任务写法.png)
 - 每三小时执行一次定时脚本
 - 分、时、日、月、周、用户、执行的命令
 
-```
 
 Author:UStarGao

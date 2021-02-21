@@ -19,4 +19,20 @@ Docker默认镜像源在国外，国内下载速度可能略慢，配置国内�
 }
 ```
 
+- 配置Docker网易镜像源
+
+```
+{
+  "registry-mirrors": [ "http://hub-mirror.c.163.com"]
+}
+```
+
+- 配置Docker USTC镜像源
+
+```
+{
+  "registry-mirrors": [ "https://docker.mirrors.ustc.edu.cn"]
+}
+```
+
 Author:UStarGao

@@ -2,8 +2,11 @@
 layout: post
 title: MongoDB Backup Script
 ---
+数据安全是每个企业的重中之重，及时做好数据备份和风险管控是每个企业运维部门的责任与义务。近些年来各种删库跑路的事件，屡见不鲜，对企业造成了严重的经济损失和信誉影响。
 
-##MongoDB自动备份.sh脚本案例
+针对MongoDB的数据定时（业务低峰期开始）备份，推荐参考以下脚本：
+
+## MongoDB自动备份.sh脚本案例
 vim /opt/crontab/mongodb_backup.sh
 
 ```
@@ -35,4 +38,28 @@ find $TAR_DIR/ -mtime +$DAYS -delete
  
 exit
 ```
+## crontab介绍
+查看当前用户的crontab，输入 crontab -l；
+编辑crontab，输入 crontab -e；
+删除crontab，输入 crontab -r
+
+## crontab文件参数解读
+# For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+  分 时 日 月 周 命令
+第1列表示分钟1～59 每分钟用或者 /1表示
+第2列表示小时1～23（0表示0点）
+第3列表示日期1～31
+第4列表示月份1～12
+第5列标识号星期0～6（0表示星期天）
+
+
 Author:UStarGao

@@ -38,14 +38,14 @@ find $TAR_DIR/ -mtime +$DAYS -delete
 exit
 ```
 ## crontab介绍
-查看当前用户的crontab，输入 crontab -l；
-编辑crontab，输入 crontab -e；
-删除crontab，输入 crontab -r
+- 查看当前用户的crontab，输入 crontab -l；
+- 编辑crontab，输入 crontab -e；
+- 删除crontab，输入 crontab -r
 
 ## crontab文件参数解读
-# For details see man 4 crontabs
 
 ```
+# For details see man 4 crontabs
 # Example of job definition:
 # .---------------- minute (0 - 59)
 # |  .------------- hour (0 - 23)
@@ -55,12 +55,12 @@ exit
 # |  |  |  |  |
 # *  *  *  *  * user-name  command to be executed
 ```
-  分 时 日 月 周 命令
-第1列表示分钟1～59 每分钟用或者 /1表示
-第2列表示小时1～23（0表示0点）
-第3列表示日期1～31
-第4列表示月份1～12
-第5列标识号星期0～6（0表示星期天）
+- 分 时 日 月 周 命令
+- 第1列表示分钟1～59 每分钟用或者 /1表示
+- 第2列表示小时1～23（0表示0点）
+- 第3列表示日期1～31
+- 第4列表示月份1～12
+- 第5列标识号星期0～6（0表示星期天）
 
 
 Author:UStarGao
